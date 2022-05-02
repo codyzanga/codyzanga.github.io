@@ -57,7 +57,7 @@
 
   <article class="article">
     
-    <span class="article-duration">0 min read</span>
+    <span class="article-duration">7 min read</span>
     
 
     <h1 class="article-title">Is winning games connected to passer rating?</h1>
@@ -70,6 +70,510 @@
       
 
 
+<p>For a while now it seems that there has been a lot of debate on how important passer rating really is for an NFL quarterback. There are other complex statistics out there such as QBR, which was created by ESPN to be a more accurate method to assess QB performance. QBR measures nearly everything a QB does including their turnovers, penalties and their performance compared to the rest of their team. Passer rating on the other hand, only takes five things into account. A quarterbacks pass attempts, completions, passing yards, touchdowns and interceptions.</p>
+<p>How important is passer rating in accounting for how many wins a QB leads his team too and is there anything else that passer rating can be used for? We’ll look into how passer rating relates to winning games using data from Pro-Football Reference over the last five NFL seasons.</p>
+<p><img src="http://codyzanga.github.io/2022/04/30/passer-rating-and-wins/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>We can see that there is somewhat strong correlations between passer rating and wins here. Over the last five seasons, Patrick Mahomes led his Kansas City Chief to the most regular season wins of any quarterback, but fell short in the Super Bowl.</p>
+<p>For those of you who remember the Heisman trophy winning former Oklahoma QB Sam Bradford, he holds the highest passer rating of any quarterback over the past five seasons. A minor thing to keep in mind though is that he only started two games in 2017 before missing the rest of the season to a knee injury. Just imagine what could’ve been though!</p>
+<p><img src="http://codyzanga.github.io/2022/04/30/passer-rating-and-wins/index_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>We can see that sacks don’t have as much as influence as you might think on if a quarterback is able to lead his team to at least 10 wins. Matthew Stafford led his team to a Super Bowl victory last season with an above average passer rating while also being sacked more than the average QB.</p>
+<p>There’s also only been 4 or 5 instances that a QB has had a below average passer rating and still achieved 10 victories, but that seems like a rare feat given that it’s only happened a handful of times over the last five years.</p>
+<div id="mdfpzzbtms" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#mdfpzzbtms .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: none;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#mdfpzzbtms .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#mdfpzzbtms .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#mdfpzzbtms .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#mdfpzzbtms .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#mdfpzzbtms .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#mdfpzzbtms .gt_column_spanner {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#mdfpzzbtms .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#mdfpzzbtms .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#mdfpzzbtms .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#mdfpzzbtms .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#mdfpzzbtms .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#mdfpzzbtms .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mdfpzzbtms .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#mdfpzzbtms .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#mdfpzzbtms .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mdfpzzbtms .gt_first_summary_row {
+  border-top-style: none;
+  border-top-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#mdfpzzbtms .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mdfpzzbtms .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: none;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#mdfpzzbtms .gt_table_body {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mdfpzzbtms .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mdfpzzbtms .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mdfpzzbtms .gt_left {
+  text-align: left;
+}
+
+#mdfpzzbtms .gt_center {
+  text-align: center;
+}
+
+#mdfpzzbtms .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#mdfpzzbtms .gt_font_normal {
+  font-weight: normal;
+}
+
+#mdfpzzbtms .gt_font_bold {
+  font-weight: bold;
+}
+
+#mdfpzzbtms .gt_font_italic {
+  font-style: italic;
+}
+
+#mdfpzzbtms .gt_super {
+  font-size: 65%;
+}
+
+#mdfpzzbtms .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#mdfpzzbtms .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#mdfpzzbtms .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#mdfpzzbtms .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#mdfpzzbtms .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="6" class="gt_heading gt_title gt_font_normal" style="color: #000000; text-align: left; font-weight: bold;">MVPs lead the league in passer rating</th>
+    </tr>
+    <tr>
+      <th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="color: #000000; text-align: left;">Aaron Rodgers has led the league in passer rating the last two seasons.</th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Player</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Team</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Win</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Loss</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Passing Yards</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Passer Rating</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Tom Brady</td>
+<td class="gt_row gt_left">TAM</td>
+<td class="gt_row gt_right">13</td>
+<td class="gt_row gt_right">4</td>
+<td class="gt_row gt_right">5316</td>
+<td class="gt_row gt_right">102.1</td></tr>
+    <tr><td class="gt_row gt_left gt_striped" style="background-color: #203731; color: #FFFFFF;">Aaron Rodgers</td>
+<td class="gt_row gt_left gt_striped" style="background-color: #203731; color: #FFFFFF;">GNB</td>
+<td class="gt_row gt_right gt_striped" style="background-color: #203731; color: #FFFFFF;">13</td>
+<td class="gt_row gt_right gt_striped" style="background-color: #203731; color: #FFFFFF;">3</td>
+<td class="gt_row gt_right gt_striped" style="background-color: #203731; color: #FFFFFF;">4115</td>
+<td class="gt_row gt_right gt_striped" style="background-color: #203731; color: #FFFFFF;">111.9</td></tr>
+    <tr><td class="gt_row gt_left">Matthew Stafford</td>
+<td class="gt_row gt_left">LAR</td>
+<td class="gt_row gt_right">12</td>
+<td class="gt_row gt_right">5</td>
+<td class="gt_row gt_right">4886</td>
+<td class="gt_row gt_right">102.9</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Patrick Mahomes</td>
+<td class="gt_row gt_left gt_striped">KAN</td>
+<td class="gt_row gt_right gt_striped">12</td>
+<td class="gt_row gt_right gt_striped">5</td>
+<td class="gt_row gt_right gt_striped">4839</td>
+<td class="gt_row gt_right gt_striped">98.5</td></tr>
+    <tr><td class="gt_row gt_left">Ryan Tannehill</td>
+<td class="gt_row gt_left">TEN</td>
+<td class="gt_row gt_right">12</td>
+<td class="gt_row gt_right">5</td>
+<td class="gt_row gt_right">3734</td>
+<td class="gt_row gt_right">89.6</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Dak Prescott</td>
+<td class="gt_row gt_left gt_striped">DAL</td>
+<td class="gt_row gt_right gt_striped">11</td>
+<td class="gt_row gt_right gt_striped">5</td>
+<td class="gt_row gt_right gt_striped">4449</td>
+<td class="gt_row gt_right gt_striped">104.2</td></tr>
+    <tr><td class="gt_row gt_left">Josh Allen</td>
+<td class="gt_row gt_left">BUF</td>
+<td class="gt_row gt_right">11</td>
+<td class="gt_row gt_right">6</td>
+<td class="gt_row gt_right">4407</td>
+<td class="gt_row gt_right">92.2</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Derek Carr</td>
+<td class="gt_row gt_left gt_striped">LVR</td>
+<td class="gt_row gt_right gt_striped">10</td>
+<td class="gt_row gt_right gt_striped">7</td>
+<td class="gt_row gt_right gt_striped">4804</td>
+<td class="gt_row gt_right gt_striped">94.0</td></tr>
+    <tr><td class="gt_row gt_left">Joe Burrow</td>
+<td class="gt_row gt_left">CIN</td>
+<td class="gt_row gt_right">10</td>
+<td class="gt_row gt_right">6</td>
+<td class="gt_row gt_right">4611</td>
+<td class="gt_row gt_right">108.3</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Mac Jones</td>
+<td class="gt_row gt_left gt_striped">NWE</td>
+<td class="gt_row gt_right gt_striped">10</td>
+<td class="gt_row gt_right gt_striped">7</td>
+<td class="gt_row gt_right gt_striped">3801</td>
+<td class="gt_row gt_right gt_striped">92.5</td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="6"><strong>By:</strong> Cody Zanga  |  <strong>Source:</strong> <a href="https://www.pro-football-reference.com/years/2021/passing.htm">Pro-Football Reference</a></td>
+    </tr>
+  </tfoot>
+  
+</table>
+</div>
+<p>Here we can see all quarterbacks with at least 10 wins last year. Ryan Tannehill was the only one that did it with a slightly below average passer rating. Maybe that’s one of the reasons why the Titans weren’t able to make a push to the Super Bowl last year.</p>
+<p>An interesting trend over the last three years is that the passer rating leader has won the NFL MVP. Lamar Jackson had the highest passer rating of any QB that played a full season outside of resting the final week in 2019. However, that’s not unique because using QBR would tell you the same thing.</p>
+<p>Maybe passer rating does show some connection to winning games, but is it really necessary if we can predict wins more accurately with other statistics like QBR? Maybe it really is time that we drop passer rating as a statistic to measure QB performance.</p>
+<p>The code that generated this post and these graphs can be found <a href="https://github.com/codyzanga/Notebooks/blob/main/project2.Rmd">here</a></p>
 
     </div>
   </article>
