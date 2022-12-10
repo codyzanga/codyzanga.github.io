@@ -14,6 +14,7 @@
       
       <guid>http://codyzanga.github.io/2022/12/09/nfl/</guid>
       <description>This is a link to a shiny app that will show all NFL teams schedules and results through week 13.
+Data from pro-football reference was used to create this application.
 http://codyzanga.shinyapps.io/ShinyApp_NFL</description>
     </item>
     
