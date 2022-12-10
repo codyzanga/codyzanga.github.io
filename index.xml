@@ -6,7 +6,17 @@
     <description>Recent content on Cody Zanga&#39;s Sports Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://codyzanga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://codyzanga.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shiny App Link - NFL Schedule</title>
+      <link>http://codyzanga.github.io/2022/12/09/nfl/</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://codyzanga.github.io/2022/12/09/nfl/</guid>
+      <description>This is a link to a shiny app that will show all NFL teams schedules and results through week 13.
+http://codyzanga.shinyapps.io/ShinyApp_NFL</description>
+    </item>
+    
     <item>
       <title>The best NBA teams and players.</title>
       <link>http://codyzanga.github.io/2022/11/28/nba/</link>
